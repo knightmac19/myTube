@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyTube | What&#39;s Really Going On in Russia?</title>
+  </head>
+  <body>
+    <div id="page-container">
+      <div id="content-wrap">
+        <!-- all other page content -->
+        <nav style="background-color: gainsboro">
+          <a rel="noopener noreferrer" href="./index.html">Home</a>
+          <!-- prettier-ignore -->
+          <a rel="noopener noreferrer" href="./pages/bjj.html">Brazilian Jiu Jitsu</a>
+          <a rel="noopener noreferrer" href="./pages/cooking.html">Cooking</a>
+          <a rel="noopener noreferrer" href="./pages/podcasts.html">Podcasts</a>
+        </nav>
+        <h1>Add New Video</h1>
+        <br />
+        <form action="" method="get">
+          <label for="title">Video Title</label>
+          <br />
+          <input
+            size="40"
+            placeholder="Input value"
+            required
+            type="text"
+            id="title"
+          />
+          <br />
+          <br />
+
+          <label for="description">Description</label>
+          <br />
+          <textarea
+            required
+            placeholder="Text area content"
+            rows="5"
+            cols="32"
+            id="description"
+          ></textarea>
+          <br />
+          <br />
+          <label for="video">Video</label>
+          <br />
+          <input
+            type="file"
+            id="video"
+            name="video"
+            accept=".mov, .mp4, .wmv, .avi"
+            required
+          />
+          <br />
+          <br />
+          <br />
+          <label for="collection"></label>
+          <select name="collections" id="collection" required>
+            <option value="">Choose Collection</option>
+            <option value="brazilian-jiu-jitsu">Brazilian Jiu Jitsu</option>
+            <option value="cooking">Cooking</option>
+            <option value="podcasts">Podcasts</option>
+          </select>
+          <br />
+          <br />
+          <br />
+          <input
+            name="public-v-private"
+            value="public"
+            type="radio"
+            id="public"
+            checked
+          />
+          <label for="public" class="public-private-radio">Public</label>
+          <input
+            name="public-v-private"
+            value="private"
+            type="radio"
+            id="private"
+          />
+          <label for="private" class="public-private-radio">Private</label>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <button type="submit">Upload Video</button>
+        </form>
+      </div>
+      <!-- footer -->
+      <hr />
+      <footer>&copy; Patrick Dunn 2023</footer>
+    </div>
+  </body>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    #page-container {
+      position: relative;
+      min-height: 100vh;
+    }
+    #content-wrap {
+      padding-bottom: 2.5rem;
+    }
+
+    nav {
+      padding: 15px;
+      margin-bottom: 3rem;
+    }
+    nav a {
+      font-size: 1.7rem;
+      padding: 10px;
+    }
+    h1,
+    form {
+      margin-left: 20px;
+      margin-bottom: 1rem;
+    }
+    form label {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    form input,
+    textarea {
+      line-height: 2.2em;
+      padding-left: 5px;
+      margin-top: 1rem;
+    }
+    input::file-selector-button,
+    button {
+      font-weight: bold;
+      color: black;
+      font-size: 1rem;
+      padding: 0.75em;
+      width: 10rem;
+      border: thin solid grey;
+      border-radius: 8px;
+      background: linear-gradient(rgb(225, 222, 222), rgb(162, 160, 160));
+      cursor: pointer;
+    }
+    #video {
+      width: 160px;
+      overflow: hidden;
+    }
+    select {
+      color: gray;
+      font-size: 1rem;
+      padding: 0.75em;
+      width: 250px;
+      border: thin solid grey;
+      border-radius: 8px;
+      background: linear-gradient(rgb(248, 246, 246), rgb(225, 222, 222));
+      cursor: pointer;
+    }
+    .public-private-radio {
+      line-height: normal;
+      padding-right: 10px;
+      font-size: 1rem;
+      font-weight: 100;
+    }
+
+    .featured {
+      margin-left: 20px;
+    }
+    .card {
+      text-align: center;
+      width: 570px;
+      height: 400px;
+      background-color: gainsboro;
+      border: gray solid 1px;
+      padding: 10px 5px 0px 5px;
+    }
+    .description {
+      margin-top: 20px;
+      max-width: 570px;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 2.5rem;
+      box-sizing: border-box;
+      padding-top: 10px;
+
+      text-align: center;
+      background-color: gainsboro;
+      border: 1px solid gray;
+    }
+  </style>
+</html>
