@@ -1,3 +1,3 @@
 # myTube
 
-[deployed site](https://www.knightmac19.github.io/myTube)
+[deployed site](https://knightmac19.github.io/myTube)
