@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
     <title>MyTube | Home</title>
   </head>
   <body>
     <div id="page-container">
       <div id="content-wrap">
         <!-- all other page content -->
-        <nav style="background-color: gainsboro">
+        <nav>
           <a rel="noopener noreferrer" href="./index.html">Home</a>
           <!-- prettier-ignore -->
           <a rel="noopener noreferrer" href="./pages/bjj.html">Brazilian Jiu Jitsu</a>
@@ -31,11 +32,9 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               ></iframe>
             </div>
-            <a rel="noopener noreferrer" href="./videos/peters-crucible.html"
-              ><h3>
-                Jiu Jitsu Black Belt Exam | Peter's Crucible | ROYDEAN
-              </h3></a
-            >
+            <a rel="noopener noreferrer" href="./videos/peters-crucible.html">
+              Jiu Jitsu Black Belt Exam | Peter's Crucible | ROYDEAN
+            </a>
           </div>
           <div class="card">
             <!-- embed youtube video here -->
@@ -50,7 +49,7 @@
               ></iframe>
             </div>
             <a rel="noopener noreferrer" href="./videos/chilaquiles.html"
-              ><h3>CHILAQUILES VERDES</h3></a
+              >CHILAQUILES VERDES</a
             >
           </div>
           <div class="card">
@@ -66,75 +65,22 @@
               ></iframe>
             </div>
             <a rel="noopener noreferrer" href="./videos/dating-market.html">
-              <h3>
-                How To Succeed In The Modern Dating Market - Sadia Khan | Modern
-                Wisdom 634
-              </h3>
+              How To Succeed In The Modern Dating Market - Sadia Khan | Modern
+              Wisdom 634
             </a>
           </div>
         </section>
       </div>
-      <hr />
+
       <!-- footer -->
-      <footer>&copy; Patrick Dunn 2023</footer>
+      <footer>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://github.com/knightmac19"
+          >&copy; Patrick Dunn 2023</a
+        >
+      </footer>
     </div>
   </body>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-    }
-    #page-container {
-      position: relative;
-      min-height: 100vh;
-    }
-    #content-wrap {
-      padding-bottom: 2.5rem;
-    }
-
-    nav {
-      padding: 15px;
-      margin-bottom: 3rem;
-    }
-    nav a {
-      font-size: 1.7rem;
-      padding: 10px;
-    }
-    h1 {
-      margin-left: 20px;
-      margin-bottom: 1rem;
-    }
-    .featured {
-      display: flex;
-      align-items: end;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 1em;
-    }
-    .card {
-      text-align: center;
-      width: 285px;
-      height: 285px;
-      background-color: gainsboro;
-      border: gray solid 1px;
-      padding: 10px 5px 0px 5px;
-    }
-    .card h3 {
-      margin-top: 1rem;
-    }
-    footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 2.5rem;
-      box-sizing: border-box;
-      padding-top: 10px;
-
-      text-align: center;
-      background-color: gainsboro;
-      border: 1px solid gray;
-    }
-  </style>
 </html>
