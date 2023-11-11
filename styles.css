@@ -54,6 +54,7 @@ h1 {
   flex-wrap: wrap;
   gap: 3rem 1rem;
   max-width: 1000px;
+  margin-bottom: 50px;
 }
 .card {
   text-align: center;
