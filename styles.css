@@ -14,10 +14,6 @@ body {
   text-align: center;
   background-color: var(--alabaster);
 }
-/* h1 {
-  text-align: left;
-  padding-left: 140px;
-} */
 
 #page-container {
   position: relative;
@@ -63,6 +59,17 @@ h1 {
   text-align: center;
   width: 300px;
   height: 350px;
+  background-color: var(--platinum);
+  border: var(--eerie-black) solid 2px;
+  border-radius: 6px;
+  box-shadow: 12px 12px 2px 1px #333533;
+  padding: 10px 5px 0px 5px;
+}
+
+.large-card {
+  text-align: center;
+  width: 570px;
+  height: 400px;
   background-color: var(--platinum);
   border: var(--eerie-black) solid 2px;
   border-radius: 6px;
