@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
     <title>
       MyTube | On Learning Jiu-Jitsu with 100% Live Training and No Formal
       Technical Instruction, with Greg Souders
@@ -12,7 +13,7 @@
     <div id="page-container">
       <div id="content-wrap">
         <!-- all other page content -->
-        <nav style="background-color: gainsboro">
+        <nav>
           <a rel="noopener noreferrer" href="../index.html">Home</a>
           <!-- prettier-ignore -->
           <a rel="noopener noreferrer" href="../pages/bjj.html">Brazilian Jiu Jitsu</a>
@@ -27,7 +28,7 @@
           Instruction, with Greg Souders
         </h1>
         <section class="featured">
-          <div class="card">
+          <div class="large-card">
             <!-- embed youtube video here -->
             <div>
               <iframe
@@ -55,65 +56,16 @@
           </section>
         </section>
       </div>
-      <hr />
+
       <!-- footer -->
-      <footer>&copy; Patrick Dunn 2023</footer>
+      <footer>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://github.com/knightmac19"
+          >&copy; Patrick Dunn 2023</a
+        >
+      </footer>
     </div>
   </body>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-    }
-    #page-container {
-      position: relative;
-      min-height: 100vh;
-    }
-    #content-wrap {
-      padding-bottom: 2.5rem;
-    }
-
-    nav {
-      padding: 15px;
-      margin-bottom: 3rem;
-    }
-    nav a {
-      font-size: 1.7rem;
-      padding: 10px;
-    }
-    h1 {
-      margin-left: 20px;
-      margin-bottom: 1rem;
-    }
-    .featured {
-      margin-left: 20px;
-    }
-    .card {
-      text-align: center;
-      width: 570px;
-      height: 400px;
-      background-color: gainsboro;
-      border: gray solid 1px;
-      padding: 10px 5px 0px 5px;
-    }
-    .description {
-      margin-top: 20px;
-      max-width: 570px;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 2.5rem;
-      box-sizing: border-box;
-      padding-top: 10px;
-
-      text-align: center;
-      background-color: gainsboro;
-      border: 1px solid gray;
-    }
-  </style>
 </html>
