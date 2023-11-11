@@ -44,8 +44,8 @@ nav a {
   padding: 10px;
 }
 h1 {
-  margin-left: 20px;
   margin-bottom: 1rem;
+  max-width: 80%;
 }
 .featured {
   display: flex;
